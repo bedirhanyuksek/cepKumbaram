@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jfl-my-VeJ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cepKumbaram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="kAs-ks-meK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kullanıcı adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pW-Mn-MHM">
+                                <rect key="frame" x="86" y="257" width="220" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="44a-Dz-1q0">
+                                <rect key="frame" x="86" y="313" width="220" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hx-rm-MKq">
+                                <rect key="frame" x="69" y="383" width="110" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Oturum Aç">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="oturumAcButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8h-ix-fqf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-pl-uMH">
+                                <rect key="frame" x="86" y="78" width="237" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-lk-Sqb">
+                                <rect key="frame" x="86" y="488" width="220" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıtlı kullanıcılar">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kayitliKullanicilarButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmS-bg-s48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwp-yq-5nS">
+                                <rect key="frame" x="216" y="383" width="107" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kayitOlButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VZa-2n-YfK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8yQ-Dr-spF"/>
+                    <connections>
+                        <outlet property="background" destination="kAs-ks-meK" id="AZq-RM-H4C"/>
+                        <outlet property="kullaniciTextField" destination="3pW-Mn-MHM" id="35y-Uz-zBS"/>
+                        <outlet property="logo" destination="g6D-pl-uMH" id="sV6-uU-5vU"/>
+                        <outlet property="sifreTextField" destination="44a-Dz-1q0" id="Gle-My-IAM"/>
+                        <segue destination="4Jt-RK-dbg" kind="show" identifier="toKayitolVC" id="fei-mO-OkF"/>
+                        <segue destination="ZnM-rX-W2a" kind="show" identifier="toKayitlilarVC" id="sxc-Vy-HWo"/>
+                        <segue destination="3sf-CC-G3V" kind="show" identifier="toOturumAcVC" id="0T7-YF-uYZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Kayitlilar View Controller-->
+        <scene sceneID="uv0-R8-d80">
+            <objects>
+                <viewController id="ZnM-rX-W2a" customClass="kayitlilarViewController" customModule="cepKumbaram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lqr-4G-9Mp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fcq-MT-rRg">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OaF-cI-mdV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fcq-MT-rRg" firstAttribute="leading" secondItem="OaF-cI-mdV" secondAttribute="leading" id="Ezm-s4-dtT"/>
+                            <constraint firstItem="Fcq-MT-rRg" firstAttribute="trailing" secondItem="OaF-cI-mdV" secondAttribute="trailing" id="IgG-NZ-3xj"/>
+                            <constraint firstItem="Fcq-MT-rRg" firstAttribute="top" secondItem="lqr-4G-9Mp" secondAttribute="top" id="Se1-Lw-xHR"/>
+                            <constraint firstAttribute="bottom" secondItem="Fcq-MT-rRg" secondAttribute="bottom" id="viX-7q-7ro"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cmy-xT-QXt"/>
+                    <connections>
+                        <outlet property="TableView" destination="Fcq-MT-rRg" id="Vxw-KS-sIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sG0-ZN-MWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="757"/>
+        </scene>
+        <!--Kayitol View Controller-->
+        <scene sceneID="J28-OL-0kP">
+            <objects>
+                <viewController id="4Jt-RK-dbg" customClass="kayitolViewController" customModule="cepKumbaram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9d-No-0vE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="m0d-Z5-WhS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kullanıcı adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1Z-Ep-qWt">
+                                <rect key="frame" x="92" y="214" width="209" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="şifre tekrar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3F-VU-lUi">
+                                <rect key="frame" x="92" y="321" width="209" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-u0-DT8">
+                                <rect key="frame" x="92" y="269" width="209" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kayıt Ol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFx-jw-0Cj">
+                                <rect key="frame" x="92" y="103" width="197" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-hZ-8MN">
+                                <rect key="frame" x="94" y="394" width="193" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kayitEtButon:" destination="4Jt-RK-dbg" eventType="touchUpInside" id="Rnb-yd-tbL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h2H-sw-DBb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m0d-Z5-WhS" firstAttribute="bottom" secondItem="h2H-sw-DBb" secondAttribute="bottom" id="aEU-qJ-EZ8"/>
+                            <constraint firstItem="m0d-Z5-WhS" firstAttribute="leading" secondItem="h2H-sw-DBb" secondAttribute="leading" id="bkq-vE-h56"/>
+                            <constraint firstItem="m0d-Z5-WhS" firstAttribute="top" secondItem="h9d-No-0vE" secondAttribute="top" id="eOc-YC-mjl"/>
+                            <constraint firstItem="m0d-Z5-WhS" firstAttribute="trailing" secondItem="h2H-sw-DBb" secondAttribute="trailing" id="tPU-6k-CJq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c9G-pl-GIb"/>
+                    <connections>
+                        <outlet property="kullaniciKayitTextField" destination="H1Z-Ep-qWt" id="3M4-0N-ATF"/>
+                        <outlet property="label" destination="jFx-jw-0Cj" id="kA0-Ey-SkQ"/>
+                        <outlet property="sifreKayitTextField" destination="Abs-u0-DT8" id="c4L-JI-pPL"/>
+                        <outlet property="sifreTekrarTextField" destination="H3F-VU-lUi" id="IIq-FG-c1E"/>
+                        <segue destination="ZnM-rX-W2a" kind="show" identifier="toKayitlilarVC" id="DJt-2j-dbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbX-1B-2iO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951.9083969465648" y="32.394366197183103"/>
+        </scene>
+        <!--Oturum Ac View Controller-->
+        <scene sceneID="fRR-wa-9P4">
+            <objects>
+                <viewController id="3sf-CC-G3V" customClass="oturumAcViewController" customModule="cepKumbaram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dE2-mL-lf0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="96m-Vj-g5s">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eklemek istediğiniz banknotlara tıklayın" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx7-pV-hkZ">
+                                <rect key="frame" x="41" y="289" width="311" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5tl" translatesAutoresizingMaskIntoConstraints="NO" id="EM6-z2-jtL">
+                                <rect key="frame" x="28" y="352" width="150" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10tl" translatesAutoresizingMaskIntoConstraints="NO" id="vcr-kC-gVf">
+                                <rect key="frame" x="206" y="352" width="158" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20tl" translatesAutoresizingMaskIntoConstraints="NO" id="8A4-Qo-MBk">
+                                <rect key="frame" x="28" y="453" width="150" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50tl" translatesAutoresizingMaskIntoConstraints="NO" id="C8l-qv-d4m">
+                                <rect key="frame" x="206" y="453" width="158" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="100tl" translatesAutoresizingMaskIntoConstraints="NO" id="gcQ-7f-seq">
+                                <rect key="frame" x="28" y="551" width="150" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="200tl" translatesAutoresizingMaskIntoConstraints="NO" id="oag-wt-fDt">
+                                <rect key="frame" x="206" y="551" width="158" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bakiyem:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEG-Pg-gsw">
+                                <rect key="frame" x="53" y="171" width="311" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sqN-ji-ooT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="96m-Vj-g5s" firstAttribute="top" secondItem="dE2-mL-lf0" secondAttribute="top" id="6zL-0z-oVg"/>
+                            <constraint firstItem="96m-Vj-g5s" firstAttribute="leading" secondItem="sqN-ji-ooT" secondAttribute="leading" id="Cf0-xa-JN9"/>
+                            <constraint firstItem="96m-Vj-g5s" firstAttribute="trailing" secondItem="sqN-ji-ooT" secondAttribute="trailing" id="Sy4-L3-LNG"/>
+                            <constraint firstAttribute="bottom" secondItem="96m-Vj-g5s" secondAttribute="bottom" id="mXW-AR-Dxi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ui-2v-8IR"/>
+                    <connections>
+                        <outlet property="bakiyeLabel" destination="wEG-Pg-gsw" id="sKB-lH-BD5"/>
+                        <outlet property="besImageView" destination="EM6-z2-jtL" id="H9R-Q1-bdH"/>
+                        <outlet property="elliImageView" destination="C8l-qv-d4m" id="OAS-iT-bSf"/>
+                        <outlet property="ikiYuzImageView" destination="oag-wt-fDt" id="Q4p-4r-WFc"/>
+                        <outlet property="label" destination="jx7-pV-hkZ" id="mC8-FP-Ti3"/>
+                        <outlet property="onImageView" destination="vcr-kC-gVf" id="bvl-L8-G4Q"/>
+                        <outlet property="yirmiImageView" destination="8A4-Qo-MBk" id="iLo-kb-8Fw"/>
+                        <outlet property="yuzImageView" destination="gcQ-7f-seq" id="eNB-jz-zbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jki-kZ-tZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803.8167938931297" y="740.84507042253529"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eIl-yP-3HP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jfl-my-VeJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nAv-ID-bt2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u3K-Cy-waX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiD-uT-bQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DJt-2j-dbL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="100tl" width="328" height="154"/>
+        <image name="10tl" width="321" height="157"/>
+        <image name="200tl" width="332" height="152"/>
+        <image name="20tl" width="324" height="155"/>
+        <image name="50tl" width="331" height="152"/>
+        <image name="5tl" width="788" height="386"/>
+        <image name="background1" width="1505" height="785"/>
+        <image name="logo1" width="1154" height="900"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
